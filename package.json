@@ -1,22 +1,27 @@
 {
+  "homepage": "https://lindainesv.github.io/sistema-login-cadastro/",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "install:front": "cd ./app/frontend && npm install",
     "install:back": "cd ./app/backend && npm install",
+    "build": "cd ./app/frontend && npm run build",
     "install:apps": "npm run install:front && npm run install:back",
     "test": "env $(cat ./app/backend/.env) jest -i --forceExit --verbose",
     "test:browser": "SHOW_BROWSER=true npm test",
     "test:debug": "DEBUG=true npm test",
     "compose:up": "cd app && docker-compose up -d --build",
     "compose:down": "cd app && docker-compose down --remove-orphans",
-    "logs": "cd app && docker-compose logs -f"
+    "logs": "cd app && docker-compose logs -f",
+    "predeploy": "cd ./app/frontend/build && npm run predeploy",
+    "deploy": "cd ./app/frontend/build && npm run deploy"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.15.0",
     "@testing-library/react": "11.2.7",
     "@testing-library/user-event": "12.8.3",
     "axios": "0.26.0",
+    "gh-pages": "^6.0.0",
     "jest": "26.6.0",
     "mocha": "9.2.0",
     "mysql2": "2.3.3",

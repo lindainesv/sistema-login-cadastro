@@ -19,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +43,7 @@
   },
   "devDependencies": {
     "eslint-plugin-sonarjs": "0.10.0",
+    "gh-pages": "^6.0.0",
     "jest": "26.6.0",
     "stylelint": "13.8.0",
     "stylelint-order": "4.1.0"
