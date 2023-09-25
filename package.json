@@ -1,8 +1,8 @@
 {
-  "homepage": "sistema-login-cadastro/",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./app/frontend/src/index.js",
   "scripts": {
+    "start": "cd ./app/frontend && npm start",
     "install:front": "cd ./app/frontend && npm install",
     "install:back": "cd ./app/backend && npm install",
     "build": "cd ./app/frontend && npm run build",
