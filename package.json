@@ -1,6 +1,6 @@
 {
   "name": "sistema-login-cadastro",
-  "homepage": "sistema-login-cadastro/",
+  "homepage": "https://lindainesv.github.io/sistema-login-cadastro/",
   "version": "1.0.0",
   "main": "./app/frontend/src/index.js",
   "scripts": {
